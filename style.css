@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    background: #fff;
+    padding: 30px;
+    border: 4px solid #000;
+    box-shadow: 8px 8px 0px #000;
+    border-radius: 12px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    background: #ffe600;
+    display: inline-block;
+    padding: 0 10px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    transform: rotate(-1deg);
+}
+
+header h1 i {
+    color: #000;
+}
+
+header p {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 3px solid #000;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    outline: none;
+    box-shadow: 4px 4px 0px #000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.input-group input:focus {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000;
+}
+
+.input-group button {
+    padding: 0 24px;
+    background: #ff5757;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.input-group button:hover {
+    background: #ff4141;
+}
+
+.input-group button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000;
+}
+
+.status-message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    min-height: 20px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.status-message.error { background: #ff8b8b; border: 2px solid #000; }
+.status-message.loading { background: #ffe600; border: 2px solid #000; }
+.status-message.success { background: #8ef9f3; border: 2px solid #000; }
+
+.result-container {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid #000;
+    box-shadow: 5px 5px 0px #000;
+}
+
+.result-container.hidden {
+    display: none;
+}
+
+.video-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.video-info img {
+    width: 75px;
+    height: 95px;
+    object-fit: cover;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.video-info .details h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.video-info .details p {
+    color: #555;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.download-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-dl {
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-dl:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000;
+}
+
+.btn-dl.primary {
+    background: #22c55e;
+    color: #000;
+}
+
+.btn-dl.secondary {
+    background: #e2e8f0;
+    color: #000;
+}
+
+.credit-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    border-top: 2px dashed #000;
+    padding-top: 15px;
+}
+
+.credit-footer a {
+    color: #000;
+    background: #ffe600;
+    padding: 2px 6px;
+    border: 2px solid #000;
+    text-decoration: none;
+    box-shadow: 2px 2px 0px #000;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.credit-footer a:hover {
+    background: #ffd000;
+}
